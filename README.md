@@ -1,6 +1,6 @@
-#Project: Spring Boot Rest Example
+# Project: Spring Boot Rest Example
 ---
-##Source: Website - https://howtodoinjava.com/spring-boot/spring-boot-rest-api-example/
+## Source: Website - https://howtodoinjava.com/spring-boot/spring-boot-rest-api-example/
 ---
 * [How to do it in Java - Spring Boot Rest API Example](https://howtodoinjava.com/spring-boot/spring-boot-rest-api-example/)
 * [Datasource Properties](https://howtodoinjava.com/spring-boot2/datasource-configuration/)

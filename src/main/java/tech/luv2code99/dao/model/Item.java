@@ -10,9 +10,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class Item {
 	
 	@Id
@@ -26,7 +23,7 @@ public class Item {
 	public Item() {
 		
 	}
-	public Item(Long id, @NotBlank(message = "Item must not be blank") String name) {
+	public Item(Long id, String name) {
 		this.id = id;
 		this.name = name;
 	}

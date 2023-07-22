@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import tech.luv2code99.dao.model.Item;
 import tech.luv2code99.dao.model.ItemRepository;
@@ -27,9 +29,8 @@ public class App implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		itemRepository.save(new Item(null, "Item 1"));
 		itemRepository.save(new Item(null, "Item 2"));
+		itemRepository.save(new Item(null, "Item 3"));
+		itemRepository.save(new Item(null, "Item 4"));
 	}
-    
-    
-    
     
 }

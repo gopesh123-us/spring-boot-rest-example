@@ -16,6 +16,8 @@ import tech.luv2code99.dao.model.Item;
 import tech.luv2code99.dao.model.ItemRepository;
 import tech.luv2code99.web.errors.ItemNotFoundException;
 
+
+
 @RestController
 public class ItemController {
 
@@ -26,6 +28,11 @@ public class ItemController {
 	List<Item> all() {
 		return itemRepository.findAll();
 	}
+	
+	@GetMapping("/home")
+	public String index() {
+		return "<h1>Spring Application is Running</h1>";
+	} 
 
 	@GetMapping("/items/{id}")
 	Item getById(@PathVariable Long id) {
